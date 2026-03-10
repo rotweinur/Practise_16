@@ -1,3 +1,4 @@
+import itertools
 def get_lexicographical_permutations(numbers: list[int]) -> list[tuple[int, ...]]:
     """
     Returns all permutations of a given list of numbers in lexicographical order.
@@ -15,4 +16,5 @@ def get_lexicographical_permutations(numbers: list[int]) -> list[tuple[int, ...]
 if name == "main":
     numbers_7 = list(map(int, input().split()))
     for perm in get_lexicographical_permutations(numbers_7):
+
         print(perm)
